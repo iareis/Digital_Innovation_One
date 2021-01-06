@@ -9,10 +9,18 @@
         <script type="text/javascript" src="./js/main.js"></script>
         <title>Javascript</title>
     </head>
-    <body>
+    <body onload="load()">
         <h1>Minha Página</h1>
 
-        <footer></footer>
+        <!-- ############################ -->
+        <button type="button" onclick="clicou()">Clique Aqui</button>
+        <h3 id="agradecimento" onclick="redirecionamento()"></h3>
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">
+            Passe o mouse aqui!
+        </p>
+
+        <!-- ############################ -->
+
         <script>
             /* alert("Meu Primeiro JS"); */
         </script>
