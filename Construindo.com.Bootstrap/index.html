@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="shortcut icon" href="" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="bootstrap/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <title>Página Bootstrap</title>
+    </head>
+    <body>
+        <!-- Barra de Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img
+                    src="assets/img/globallabs-icon.jpg"
+                    width="220"
+                    height="80"
+                />
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quemSomos">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- fim da Barra de Navegação -->
+
+        <!-- QUEM SOMOS? -->
+        <section id="quemSomos">
+            <div class="container-fluid quem-somos text-center margin">
+                <!-- container sozinho pega apenas o meio -->
+                <h3 class="margin">QUEM SOMOS?</h3>
+                <img
+                    src="assets/img/quemSomos.jpeg"
+                    class="rounded-circle"
+                    alt="Quem somos"
+                    title="Quem somos"
+                    width="400"
+                    height="400"
+                />
+                <h4>Somos um time aventureiro!</h4>
+            </div>
+        </section>
+        <!-- fim de QUEM SOMOS? -->
+
+        <!-- Lista de navegação com imagens em seu projeto -->
+        <selection id="parceiros">
+            <div class="container-fluid text-center margin parceiros">
+                <h3 class="margin">PARCEIROS</h3>
+                <div class="container">
+                    <div class="row">
+                        <!-- COMO O ESPAÇO SÃO 12 COLUNAS E VAMOS FAZER 3,
+                        DEVE-SE DIVIDIR 12 POR 3 QUE É IGUAL A 4 POR ISSO
+                        A class FICA COL-LG-4 -->
+                        <div class="col-lg-4">
+                            <img
+                                src="assets/img/parum.jpg"
+                                width="100%"
+                                height="100%"
+                                class="rounded-circle"
+                            />
+                        </div>
+                        <div class="col-lg-4">
+                            <img
+                                src="assets/img/pardois.jpg"
+                                width="100%"
+                                height="100%"
+                                class="rounded-circle"
+                            />
+                        </div>
+                        <div class="col-lg-4">
+                            <img
+                                src="assets/img/partres.jpg"
+                                width="100%"
+                                height="100%"
+                                class="rounded-circle"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </selection>
+        <!-- final da Lista de navegação com imagens em seu projeto -->
+
+        <section id="servicos">
+            <div class="container-fluid text-center margin servicos">
+                <h3 class="margin">SERVIÇOS</h3>
+                <div class="container">
+                    <div class="row">
+                        <!-- AGORA VOU QUERER 2 COLUNAS
+                        ENTÃO DIVIDO 12 POR 2 = 6
+                        E A class FICA COL-LG-SEIS -->
+                        <div class="col-lg-6">
+                            <p>
+                                O trecho padrão original de Lorem Ipsum, usado
+                                desde o século XVI, está reproduzido abaixo para
+                                os interessados. Seções 1.10.32 e 1.10.33 de "de
+                                Finibus Bonorum et Malorum" de Cicero também
+                                foram reproduzidas abaixo em sua forma exata
+                                original, acompanhada das versões para o inglês
+                                da tradução feita por H. Rackham em 1914.
+                            </p>
+                            <img src="assets/img/app.jpeg" width="100%" />
+                        </div>
+                        <div class="col-lg-6">
+                            <p>
+                                Ao contrário do que se acredita, Lorem Ipsum não
+                                é simplesmente um texto randômico. Com mais de
+                                2000 anos, suas raízes podem ser encontradas em
+                                uma obra de literatura latina clássica datada de
+                                45 AC. Richard McClintock, um professor de latim
+                                do Hampden-Sydney College na Virginia, pesquisou
+                                uma das mais obscuras palavras em latim.
+                            </p>
+                            <img src="assets/img/site3.jpeg" width="100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="container-fluid text-center bg-footer">
+                Desenvolvido por Iuri Reis.
+            </p>
+        </footer>
+        <script></script>
+    </body>
+</html>

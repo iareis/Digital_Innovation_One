@@ -1,0 +1,22 @@
+.navbar {
+    background-color: burlywood;
+}
+
+.quem-somos {
+    background-color: rgb(230, 199, 158);
+}
+
+.margin {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+.parceiros {
+    background-color: rgb(240, 218, 185);
+}
+
+.bg-footer {
+    background-color: rgb(216, 170, 170);
+    color: blanchedalmond;
+}
