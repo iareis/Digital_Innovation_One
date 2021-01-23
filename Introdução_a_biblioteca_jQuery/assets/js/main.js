@@ -7,21 +7,19 @@ function consultaCep() {
         url: url,
         type: "GET",
         success: function (response) {
-            /*Na impressão via console.LOG pode utilizar no Response
-            o nome do indice, por exemplo localidade
-            console.log(response.localidade); */
             console.log(response);
-            /* alert(response.logradouro); */
-            document.getElementById("logradouro").innerHTML =
-                response.logradouro;
-            document.getElementById("bairro").innerHTML = response.bairro;
-            document.getElementById("localidade").innerHTML =
-                response.localidade;
-            /* Existe uma outra maneira de utilizar o código 
-            através do CIFRÃO vc chama o jQuery e o HASHTAG localiza o ID
-            e joga para o HTML   
-            document.getElementById("uf").innerHTML = response.uf; */
+            $("#numberCEP").html(
+                "O endereço para o CEP " + response.cep + " é:"
+            );
+            $("#logradouro").html(response.logradouro);
+            $("#bairro").html(response.bairro);
+            $("#localidade").html(response.localidade);
             $("#uf").html(response.uf);
+            $(".cep-hide").show();
         },
     });
 }
+
+$(function () {
+    $(".cep-hide").hide();
+});
