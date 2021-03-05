@@ -25,7 +25,7 @@ body {
     width: 950px;
     height: 630px;
     background-image: url(../img/fundo_game.jpg);
-    border-color: #ffffff;
+    border-color: #fff;
     border-style: solid;
 }
 
@@ -55,6 +55,7 @@ body {
     top: 447px;
     background-image: url(../img/inimigo2.png);
 }
+
 #amigo {
     width: 44px;
     height: 51px;
@@ -67,7 +68,7 @@ body {
 #inicio {
     width: 350px;
     height: 200px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -75,9 +76,10 @@ body {
     padding: 10px;
 }
 
-.anima1 {
+.giraHelice-1 {
     background-image: url(../img/apache.png);
     animation: play 0.5s steps(2) infinite;
+
     -webkit-animation: play 0.5s steps(2) infinite;
     -moz-animation: play 0.5s steps(2) infinite;
     -ms-animation: play 0.5s steps(2) infinite;
@@ -129,8 +131,8 @@ body {
     }
 }
 
-.anima2 {
-    background-image: url(../imgs/inimigo1.png);
+.giraHeliceInimigo {
+    background-image: url(../img/inimigo1.png);
     animation: play 0.5s steps(2) infinite;
     -webkit-animation: play 0.5s steps(2) infinite;
     -moz-animation: play 0.5s steps(2) infinite;
@@ -138,8 +140,8 @@ body {
     -o-animation: play 0.5s steps(2) infinite;
 }
 
-.anima3 {
-    background-image: url(../imgs/amigo.png);
+.amigoCorre {
+    background-image: url(../img/amigo.png);
     animation: play2 0.9s steps(12) infinite;
     -webkit-animation: play2 0.9s steps(12) infinite;
     -moz-animation: play2 0.9s steps(12) infinite;
@@ -148,46 +150,48 @@ body {
 }
 
 @keyframes play2 {
-    from {
-        background-position: 0px;
-    }
-    to {
-        background-position: -528px;
-    }
+	from {background-position:0px;}
+	to {background-position:-528px;}
 }
 
 @-webkit-keyframes play2 {
-    from {
-        background-position: 0px;
-    }
-    to {
-        background-position: -528px;
-    }
+   from { background-position:    0px; }
+     to { background-position: -528px; }
 }
 
 @-moz-keyframes play2 {
-    from {
-        background-position: 0px;
-    }
-    to {
-        background-position: -528px;
-    }
+   from { background-position:    0px; }
+     to { background-position: -528px; }
 }
 
 @-ms-keyframes play2 {
-    from {
-        background-position: 0px;
-    }
-    to {
-        background-position: -528px;
-    }
+   from { background-position:    0px; }
+     to { background-position: -528px; }
 }
 
 @-o-keyframes play2 {
-    from {
-        background-position: 0px;
-    }
-    to {
-        background-position: -528px;
-    }
+   from { background-position:    0px; }
+     to { background-position: -528px; }
 }
+
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../img/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
